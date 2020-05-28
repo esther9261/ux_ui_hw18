@@ -1,0 +1,268 @@
+body{
+    background-color: #fbfbfb;
+    margin: 0px;
+    padding: 0px;
+}
+/* Navigation styles */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0px 5vw;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+.small_logo{
+    width: 15%;
+    height: auto;
+}
+.myname{
+    color: #353C62;
+    font-size: 18px;
+    font-family: Playfair+Display;
+    font-weight: 700;
+    text-decoration: none;
+}
+.navItems{
+    display: flex;
+    
+}
+.navItems a{
+    margin:30px;
+    color: #353C62;
+    font-size: 18px;
+    font-family: Playfair+Display;
+    font-weight: 700;
+    text-decoration: none;
+}
+.padding{
+    margin: 10px;
+}
+
+/* herosection styles */
+.heroSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    height: 75vh;
+}
+.heroImage{
+    width: 45%;
+    height: auto;
+    z-index: -30;
+}
+.introtext{
+    position: relative;
+    right: 100px;
+}
+
+/* worksection */
+
+.workSection{
+    margin: 100px 0px;;
+}
+
+.works{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.gridImage{
+    width: 40vw;
+    margin: 0px;
+    padding: 8px;
+    display: block;
+  
+}
+/* footer */
+footer{
+    background-color: #F0F1F6;
+    align-items: center;
+}
+
+.footerContents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    /* margin: 0px 5vw; */
+}
+.gridImage{
+    color: #353C62;
+    font-size: 25px;
+}
+
+.h1text{
+    margin: 2px 0px;
+    color: #353C62;
+    font-size: 30px;
+    font-family: Playfair+Display;
+    font-weight: 700;
+}
+.pText{
+    margin: 2px 0px;
+    color: #353C62;
+    font-size: 30px;
+    font-family: Playfair+Display;
+    font-weight: 400;
+}
+
+
+.footerlinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    /* font-size: 30px; */
+    width: 30vw;
+}
+
+.contactInfo a{
+    padding: 5px 0px;
+    color: #353C62;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+   text-decoration: none;
+   font-family: Yantramanav;
+    font-weight: 700;
+}
+.social a{
+    padding: 5px 0px;
+    color: #353C62;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Yantramanav;
+    font-weight: 700;
+}
+
+.footerMsg{
+    width: 50vw;
+}
+
+.contactInfo{
+    padding: 0px 30px;
+}
+.social{
+    padding: 0px 20px;
+}
+
+.mobile{
+    display: none;
+}
+.overlay{
+    position: relative;
+}
+.text-overlay{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navItems{
+        display: none;
+    }
+    .mobile{
+        display: inline-block;
+    }
+
+     .text-overlay{
+        display: inline-block;
+        position: absolute; 
+        left: 1vw; 
+        bottom: 1vw;
+        width: 40vw; 
+        background:rgba(0,0,0);
+        opacity:0.5;
+        color: white;
+
+    } 
+    .inside-text{
+        margin: 10px;
+        font-size: 18px;
+        font-family: yantramanav;
+    }
+
+    .bold{
+        font-weight: 700;
+    }
+
+    .footerlinks{
+        flex-wrap: wrap;
+    }
+    
+    .tablet{
+        width: 80vw;
+    }
+
+    .contactInfo{
+        padding: 0px 20px;
+    }
+    .social{
+        padding: 0px 20px;
+    }
+
+    .h1text{
+        font-size: 25px;
+    }
+    .pText{
+        font-size: 25px;
+    }
+
+    .footerContents{
+     height: 200px;
+     padding-top: 65px ;
+     /* top: 50%; */
+     align-items: baseline;   
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .footerContents{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 300px;
+    }
+    .footerMsg{
+        width: 60vw;
+    }
+    .footerlinks{
+        width: 60vw;
+    }
+    .h1text{
+        font-size: 18px;
+    }
+    .pText{
+        font-size: 18px;
+    }
+
+    .contactInfo a{
+        font-size: 15px;
+    }
+
+    .social a{
+        font-size: 15px;
+    }
+
+    .contactInfo{
+        padding: 0px
+    }
+
+    .social{
+        padding: 0px;
+    }
+}
