@@ -50,8 +50,8 @@ body{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    margin: 50px 0px;
-    height: 75vh;
+    margin: 8vh 0px;
+    height: 65vh;
 }
 .heroImage{
     width: 45%;
@@ -66,7 +66,7 @@ body{
 /* worksection */
 
 .workSection{
-    margin: 100px 0px;;
+    margin: 10vh 0vh;
 }
 
 .works{
@@ -81,9 +81,43 @@ body{
     width: 40vw;
     margin: 0px;
     padding: 8px;
-    display: block;
-  
+    display: block; 
 }
+
+.hoverlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white
+}
+.overlay:hover .hoverlay{
+    opacity: 0.8;
+  }
+
+.inside-text{
+    margin: 10px;
+    font-size: 18px;
+    font-family: yantramanav;
+    
+}
+
+.gridHead{
+    width: 40vw;
+    margin-bottom: 10px;
+    display: block;
+    color: #353C62;
+    font-size: 25px; 
+}
+
 /* footer */
 footer{
     background-color: #F0F1F6;
@@ -99,10 +133,7 @@ footer{
     height: 260px;
     /* margin: 0px 5vw; */
 }
-.gridImage{
-    color: #353C62;
-    font-size: 25px;
-}
+
 
 .h1text{
     margin: 2px 0px;
@@ -170,14 +201,40 @@ footer{
 .text-overlay{
     display: none;
 }
+.full
+{
+    display: inline;
+}
 
-@media only screen and (max-width: 768px) {
+.tab{
+    display: none;
+}
+
+.mob{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
     .navItems{
         display: none;
     }
     .mobile{
         display: inline-block;
     }
+
+/* herosection styles */
+
+.heroSection{
+    height: 40vh;
+}
+    .heroImage{
+        margin-left: 10vw;
+    }
+    .introtext{
+        right: 80px;    
+    }
+   
+/* worksection styles */
 
      .text-overlay{
         display: inline-block;
@@ -199,6 +256,8 @@ footer{
     .bold{
         font-weight: 700;
     }
+
+    /* footer */
 
     .footerlinks{
         flex-wrap: wrap;
@@ -229,22 +288,76 @@ footer{
      align-items: baseline;   
     }
 
+
+    .full{
+        display: none;
+    }
+
+    .tab{
+        display: inline;
+    }
+
+    .mob{
+        display: none;
+    }
+    
+
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
+    
+    
+    .heroSection{
+        height: 30vh;
+    }
+
+    .introtext{
+        right: 55vw;    
+    }
+    
+    .heroImage{
+        width: 70vw;
+        margin-left: 55vw;
+    }
+    
+    .gridImage{
+        width: 80vw;
+        padding: 10px 0px;
+    }
+
+    .gridHead{
+        font-size: 18px; 
+    }
+    
+    .text-overlay{
+        display: inline-block;
+        position: absolute; 
+        left: 0vw; 
+        bottom: 0vw;
+        width: 80vw; 
+        background:rgba(0,0,0);
+        opacity:0.5;
+        color: white;
+    }
+    
+       
+    
     .footerContents{
+        padding-top: 0px ;
         flex-wrap: wrap;
         justify-content: center;
-        height: 300px;
+        align-content: center;
+        height: 250px;
     }
     .footerMsg{
-        width: 60vw;
+        width: 80vw;
     }
     .footerlinks{
-        width: 60vw;
+        width: 80vw;
     }
     .h1text{
         font-size: 18px;
+        width: 70vw;
     }
     .pText{
         font-size: 18px;
@@ -264,5 +377,17 @@ footer{
 
     .social{
         padding: 0px;
+    }
+
+    .full{
+        display: none;
+    }
+
+    .tab{
+        display: none;
+    }
+
+    .mob{
+        display: inline;
     }
 }
